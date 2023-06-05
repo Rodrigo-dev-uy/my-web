@@ -68,7 +68,7 @@
   font-size: 10px;
   line-height: 3px;
   letter-spacing: 20px;
-  color: #383232;
+  color: #e62e00;
   transform: rotate(-90deg);
   opacity: 0;
   animation: appearAnimation 1s ease-in-out forwards;
