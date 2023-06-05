@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/rodrigo/static/css/main.ff8b802c.css",
-    "main.js": "/rodrigo/static/js/main.cc6e7285.js",
-    "static/media/yo3.png": "/rodrigo/static/media/yo3.955ebc7d009f1368bda3.png",
+    "main.css": "/rodrigo/static/css/main.4ad2dab4.css",
+    "main.js": "/rodrigo/static/js/main.b4325813.js",
+    "static/media/yo1.png": "/rodrigo/static/media/yo1.1077918e72b1a8007d19.png",
     "static/media/bubble.png": "/rodrigo/static/media/bubble.bf4f5576caecf52e8f81.png",
+    "static/media/3.png": "/rodrigo/static/media/3.66adfd463916afbf8b7d.png",
     "index.html": "/rodrigo/index.html",
-    "main.ff8b802c.css.map": "/rodrigo/static/css/main.ff8b802c.css.map",
-    "main.cc6e7285.js.map": "/rodrigo/static/js/main.cc6e7285.js.map"
+    "main.4ad2dab4.css.map": "/rodrigo/static/css/main.4ad2dab4.css.map",
+    "main.b4325813.js.map": "/rodrigo/static/js/main.b4325813.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff8b802c.css",
-    "static/js/main.cc6e7285.js"
+    "static/css/main.4ad2dab4.css",
+    "static/js/main.b4325813.js"
   ]
 }
