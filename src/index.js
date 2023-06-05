@@ -12,7 +12,7 @@ import Footer from "./components/Footer.jsx";
 import Loader from "./components/Loader";
 
 const Router = createBrowserRouter([
-  { path: "/my-web", element: <App /> },
+  { path: "/", element: <App /> },
   { path: "/loader", element: <Loader /> },
   { path: "/home", element: <Home /> },
   { path: "/about", element: <About /> },
