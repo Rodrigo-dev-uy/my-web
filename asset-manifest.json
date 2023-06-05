@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/rodrigo/static/css/main.073c9b0a.css",
-    "main.js": "/rodrigo/static/js/main.d91a6510.js",
+    "main.css": "/rodrigo/static/css/main.ff8b802c.css",
+    "main.js": "/rodrigo/static/js/main.cc6e7285.js",
+    "static/media/yo3.png": "/rodrigo/static/media/yo3.955ebc7d009f1368bda3.png",
+    "static/media/bubble.png": "/rodrigo/static/media/bubble.bf4f5576caecf52e8f81.png",
     "index.html": "/rodrigo/index.html",
-    "main.073c9b0a.css.map": "/rodrigo/static/css/main.073c9b0a.css.map",
-    "main.d91a6510.js.map": "/rodrigo/static/js/main.d91a6510.js.map"
+    "main.ff8b802c.css.map": "/rodrigo/static/css/main.ff8b802c.css.map",
+    "main.cc6e7285.js.map": "/rodrigo/static/js/main.cc6e7285.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.d91a6510.js"
+    "static/css/main.ff8b802c.css",
+    "static/js/main.cc6e7285.js"
   ]
 }
