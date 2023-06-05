@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/rodrigo/static/css/main.073c9b0a.css",
-    "main.js": "/rodrigo/static/js/main.0df6d729.js",
+    "main.js": "/rodrigo/static/js/main.d91a6510.js",
     "index.html": "/rodrigo/index.html",
     "main.073c9b0a.css.map": "/rodrigo/static/css/main.073c9b0a.css.map",
-    "main.0df6d729.js.map": "/rodrigo/static/js/main.0df6d729.js.map"
+    "main.d91a6510.js.map": "/rodrigo/static/js/main.d91a6510.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.0df6d729.js"
+    "static/js/main.d91a6510.js"
   ]
 }
