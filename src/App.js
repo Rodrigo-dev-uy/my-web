@@ -25,7 +25,7 @@ function App() {
         <Parallax y={[-10, 10]} tagOuter="figure"></Parallax>
         <div className="content">
           <Routes>
-            <Route path="/" element={loading ? <Loader /> : <Home />} />
+            <Route path="/my-web" element={loading ? <Loader /> : <Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/estudios" element={<Estudios />} />
             <Route path="/contact" element={<Contact />} />
