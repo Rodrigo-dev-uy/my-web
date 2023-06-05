@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
-import { ParallaxProvider } from "react-scroll-parallax";
+import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 import Home from "./components/Home";
 import About from "./components/About";
 import Estudios from "./components/Estudios";
@@ -22,12 +22,18 @@ function App() {
   return (
     <ParallaxProvider>
       <div className="app-container">
-        <Routes>
-          <Route path="/my-web" element={loading ? <Loader /> : <Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/estudios" element={<Estudios />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <Parallax y={[-10, 10]} tagOuter="figure"></Parallax>
+        <div className="content">
+          <Routes>
+            <Route path="/" element={loading ? <Loader /> : <Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/estudios" element={<Estudios />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+        <About />
+        <Estudios />
+        <Contact />
         <Footer />
       </div>
     </ParallaxProvider>
