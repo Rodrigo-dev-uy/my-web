@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-@media screen and (max-width: 1460px) and (min-width: 900px) {
+@media screen and (max-width: 1920px) and (min-width: 900px) {
   .container {
     background: black;
     height: 100vh;
