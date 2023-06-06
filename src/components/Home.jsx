@@ -1,18 +1,28 @@
-import { gsap } from "gsap";
-import React, { useEffect } from "react";
 import "../styles/Home.css";
 import Logo from "../assets/tech/3.png";
 import Iam from "../assets/tech/yo1.png";
-import { useNavigate } from "react-router-dom";
-import { Parallax } from "react-parallax";
 import { Link } from "react-scroll";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { useEffect, useRef } from "react";
 
 function Home() {
-  const navigate = useNavigate();
-
   return (
     <div className="container">
       <img className="logo" src={Logo} alt="Yo" />
+      <div className="media">
+        <ul>
+          <li>
+            <a href="#">
+              <FaGithub id="git" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <FaLinkedinIn id="li" />
+            </a>
+          </li>
+        </ul>
+      </div>
 
       <div class="hello-parent">
         <svg class="hello-word" width="365" height="365" viewBox="0 0 365 365">

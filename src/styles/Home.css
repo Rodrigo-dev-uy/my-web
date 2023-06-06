@@ -5,14 +5,16 @@
 }
 .container {
   background: rgb(247, 245, 245);
-  height: 100vh;
+  height: 80vh;
 }
 .logo {
-  position: relative;
-
+  position: absolute;
+  margin-left: 85px;
+  margin-top: -25px;
   padding: 0px;
   width: 60px;
   height: 60px;
+  z-index: 1;
 }
 
 .name {
@@ -61,13 +63,13 @@
   width: 266px;
   height: 30px;
   right: 470px;
-  top: 300px;
+  top: 223px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 10px;
   line-height: 3px;
-  letter-spacing: 20px;
+  letter-spacing: 17px;
   color: #e62e00;
   transform: rotate(-90deg);
   opacity: 0;
@@ -367,10 +369,88 @@
   }
 }
 
-@media screen and (max-width: 1200px) and (min-width: 681px) {
+@media screen and (max-width: 1468px) and (min-width: 681px) {
   /* Estilos para pantallas de 1200px a 681px de ancho (computadoras portátiles y tablets) */
 }
 
 @media screen and (max-width: 680px) {
   /* Estilos para pantallas de hasta 680px de ancho (tablets) */
+}
+
+/* CSS Media */
+
+.media {
+  position: absolute;
+  display: flex;
+  right: 10px;
+  padding-left: 100px;
+  top: 60px;
+}
+
+#git {
+  color: #cc2900;
+}
+
+#li {
+  color: #cc2900;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+ul li {
+  list-style: none;
+  margin: 0 10px; /* Ajusta el margen según tus preferencias */
+}
+
+ul li a {
+  position: relative;
+  display: block;
+  width: 30px; /* Ajusta el ancho según tus preferencias */
+  height: 30px; /* Ajusta la altura según tus preferencias */
+  text-align: center;
+  line-height: 43px; /* Ajusta el espaciado vertical según tus preferencias */
+  background: #333;
+  border-radius: 50%;
+  font-size: 20px; /* Ajusta el tamaño de la fuente según tus preferencias */
+  color: #666;
+  transition: 0.5s;
+}
+
+ul li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #cc2900;
+  transition: 0.5s;
+  transform: scale(0.9);
+  z-index: -1;
+}
+
+ul li a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #cc2900;
+}
+
+ul li a:hover {
+  color: #cc2900;
+  box-shadow: 0 0 5px #cc2900;
+  text-shadow: 0 0 5px #cc2900;
+}
+
+ul li a:hover {
+  color: #cc2900;
+  box-shadow: 0 0 5px #cc2900;
+  text-shadow: 0 0 5px #cc2900;
 }
