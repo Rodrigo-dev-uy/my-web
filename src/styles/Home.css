@@ -6,11 +6,11 @@
 
 .container {
   background: rgb(15, 15, 15);
-  height: 50vh;
+  height: 80vh;
 }
 .logo {
   position: absolute;
-  margin-left: 140px;
+  margin-left: 85px;
   margin-top: -14px;
   padding: 0px;
   width: 60px;
@@ -22,7 +22,7 @@
   position: absolute;
   width: 200px;
   height: 500px;
-  left: 150px;
+  left: 100px;
   top: 45px;
 }
 
@@ -46,8 +46,8 @@
   position: absolute;
   width: 266px;
   height: 30px;
-  right: 405px;
-  top: 250px;
+  right: 265px;
+  top: 240px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -476,10 +476,9 @@ ul li a:hover {
 
 .view {
   position: absolute;
-  top: -500px;
 
-  right: 200px;
-  bottom: 150px;
+  right: 150px;
+  bottom: 390px;
   perspective: 400px;
   width: 100px;
 }
