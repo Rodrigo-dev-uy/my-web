@@ -200,7 +200,7 @@ function Home() {
       </div>
 
       <img className="iam" src={Iam} alt="Yo" />
-      <h2 className="name2">WORLD</h2>
+      <h2 className="name2">RODRIGO</h2>
     </div>
   );
 }
