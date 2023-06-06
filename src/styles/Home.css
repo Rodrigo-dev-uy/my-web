@@ -5,8 +5,8 @@
 }
 
 .container {
-  background: rgb(15, 15, 15);
-  height: 80vh;
+  background: black;
+  height: 100vh;
 }
 .logo {
   position: absolute;

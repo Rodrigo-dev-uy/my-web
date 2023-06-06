@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-scroll";
 import { Parallax } from "react-parallax";
-import FigmaImage from "../assets/tech/figma.png";
 
 function About() {
   return (
     <div id="about-section">
-      <Parallax bgImage={FigmaImage} strength={500}>
+      <Parallax bgImage={""} strength={500}>
         <div className="parallax-content">
           <h1>Título de la sección</h1>
           <p>
