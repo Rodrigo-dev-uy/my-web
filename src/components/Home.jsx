@@ -1,29 +1,46 @@
 import "../styles/Home.css";
 import Logo from "../assets/tech/3.png";
 import Iam from "../assets/tech/yo1.png";
-import { Link } from "react-scroll";
+import React, { useEffect } from "react";
+import { gsap } from "gsap";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 function Home() {
+  const circles = [];
+
+  for (let x = 0; x < 6; x++) {
+    circles.push(<div className="circle" key={x}></div>);
+  }
+
   return (
     <div className="container">
       <img className="logo" src={Logo} alt="Yo" />
       <div className="media">
         <ul>
           <li>
-            <a href="#">
+            <Link
+              to="https://github.com/Rodrigo-dev-uy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaGithub id="git" />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link
+              to="https://www.linkedin.com/in/rodrigo-costa-dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaLinkedinIn id="li" />
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
-
+      <div className="view">
+        <div className="plane main">{circles}</div>
+      </div>
       <div class="hello-parent">
         <svg class="hello-word" width="365" height="365" viewBox="0 0 365 365">
           <g id="H-letter">
@@ -104,7 +121,7 @@ function Home() {
 
           <g id="L-one-letter">
             <line
-              class="L-one-long-stroke"
+              class="L-one-long-stroke "
               x1="17"
               y1="153"
               x2="17"
@@ -114,7 +131,7 @@ function Home() {
               stroke-width="34"
             />
             <line
-              class="L-one-short-stroke"
+              class="L-one-short-stroke "
               x1="33"
               y1="260"
               x2="77"
@@ -127,7 +144,7 @@ function Home() {
 
           <g id="L-two-letter">
             <line
-              class="L-two-long-stroke"
+              class="L-two-long-stroke "
               x1="104"
               y1="153"
               x2="104"
@@ -137,7 +154,7 @@ function Home() {
               stroke-width="34"
             />
             <line
-              class="L-two-short-stroke"
+              class="L-two-short-stroke "
               x1="120"
               y1="260"
               x2="164"
@@ -150,7 +167,7 @@ function Home() {
 
           <g id="O-letter">
             <circle
-              class="O-stroke"
+              class="O-stroke "
               cx="231"
               cy="215"
               r="48"
@@ -162,7 +179,7 @@ function Home() {
 
           <g id="red-dot">
             <circle
-              class="red-dot"
+              class="red-dot "
               cx="325"
               cy="260"
               r="20"
@@ -181,18 +198,9 @@ function Home() {
           </g>
         </svg>
       </div>
+
       <img className="iam" src={Iam} alt="Yo" />
       <h2 className="name2">WORLD</h2>
-      <Link
-        activeClass="active"
-        to="about-section"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-      >
-        Scroll to About
-      </Link>
     </div>
   );
 }

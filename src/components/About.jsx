@@ -40,7 +40,7 @@ function About() {
         offset={-70}
         duration={500}
       >
-        Back to Home
+        scroll to
       </Link>
     </div>
   );
