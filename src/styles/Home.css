@@ -9,7 +9,9 @@
 }
 
 .back {
-  height: 70vw; /* Ocupa el ancho completo de la ventana */
+  overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+  overflow-y: hidden; /* Oculta el desbordamiento vertical */
+  height: 100vw; /* Ocupa el ancho completo de la ventana */
   overflow-x: hidden; /* Oculta el desbordamiento horizontal */
   background: #f0c27b; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -42,12 +44,11 @@
 }
 
 .hello-parent {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .hello-word {
   margin-left: -20px;
-  font-size: 100px; /* Ajusta el tamaño de fuente según tus preferencias */
 }
 
 /* Name Animation */
@@ -449,14 +450,14 @@ ul li a:hover {
   position: absolute;
   right: 90px;
   left: 0;
-  top: 40%;
+  top: 60%;
   transform: translateY(-50%);
-  perspective: 400px;
+  perspective: 600px;
 }
 
 .plane {
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   transform-style: preserve-3d;
 }
 

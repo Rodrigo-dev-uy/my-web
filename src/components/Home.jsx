@@ -14,7 +14,7 @@ function Home() {
   const circles = [];
 
   for (let x = 0; x < 6; x++) {
-    circles.push(<div className="circle hello-parent perfil " key={x}></div>);
+    circles.push(<div className="circle " key={x}></div>);
   }
 
   const handleScroll = () => {
@@ -238,7 +238,7 @@ function Home() {
           <div
             className="view"
             style={{
-              transform: `translateY(-5%) translateY(${scrollPosition}px)`,
+              transform: `translateY(-50%) translateY(${scrollPosition}px)`,
             }}
           >
             <div className="plane main">{circles}</div>
