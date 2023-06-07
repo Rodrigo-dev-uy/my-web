@@ -3,10 +3,11 @@ import Logo from "../assets/tech/3.png";
 import Iam from "../assets/tech/yo1.png";
 import { useState, useEffect } from "react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Nav from "react-bootstrap/Nav";
 
 function Home() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -30,6 +31,24 @@ function Home() {
   }, []);
   return (
     <Container className="mt-4 back " fluid>
+      <Nav className="justify-content-center" activeKey="/home">
+        <Nav.Item>
+          <Link smooth to="#about">
+            About
+          </Link>
+        </Nav.Item>
+
+        <Nav.Item>
+          <Link smooth to="#estudios">
+            Estudios
+          </Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Link smooth to="#contact">
+            Contact
+          </Link>
+        </Nav.Item>
+      </Nav>
       <Row sm={3} xl={3} md={3} xxl={3}>
         <Col className="cols">
           <div

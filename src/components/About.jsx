@@ -24,7 +24,7 @@ const About = () => {
     }
   };
   return (
-    <div className="hidden">
+    <div className="hidden" id="about">
       <h1>Título del Parallax</h1>
       <Parallax bgImage="/ruta/a/tu/imagen.jpg" strength={500}>
         <div style={{ height: 500 }}>Contenido del Parallax</div>
