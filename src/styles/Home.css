@@ -11,7 +11,7 @@
 .back {
   overflow-x: hidden; /* Oculta el desbordamiento horizontal */
   overflow-y: hidden; /* Oculta el desbordamiento vertical */
-  height: 100vw; /* Ocupa el ancho completo de la ventana */
+  height: 60vw; /* Ocupa el ancho completo de la ventana */
   overflow-x: hidden; /* Oculta el desbordamiento horizontal */
   background: #f0c27b; /* fallback for old browsers */
   background: -webkit-linear-gradient(
