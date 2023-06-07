@@ -3,24 +3,30 @@
   padding: 0;
   box-sizing: border-box;
 }
-.rows {
-  border: solid 1px red;
-}
+
 .cols {
-  border: solid 1px red;
   position: relative;
 }
 
 .back {
-  background: -webkit-radial-gradient(#d9d6d6, #eaeaea);
-  background: -o-radial-gradient(#f2f2f2, #ece4e4);
-  background: -moz-radial-gradient(#f2f2f2, #c1bbbb);
-  background: radial-gradient(#f2f2f2, #a9a7a7);
+  height: 70vw; /* Ocupa el ancho completo de la ventana */
+  overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+  background: #f0c27b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4b1248,
+    #f0c27b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4b1248,
+    #f0c27b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .logo {
   position: absolute;
-  margin-left: 20px;
-  margin-top: -14px;
+  margin-left: 35px;
+  margin-top: -8px;
   padding: 0px;
   width: 60px;
   height: 60px;
@@ -28,35 +34,36 @@
 }
 
 .iam {
-  width: 150px;
-  height: 350px;
+  width: 250px;
+  height: 600px;
   left: 150px;
   margin-left: 50px;
   top: 45px;
 }
 
 .hello-parent {
-  margin-top: 10px;
+  margin-top: 100px;
 }
 
 .hello-word {
-  margin-left: -50px;
+  margin-left: -20px;
+  font-size: 100px; /* Ajusta el tamaño de fuente según tus preferencias */
 }
 
-/* WORLD Animation */
+/* Name Animation */
 .name {
   position: absolute;
   width: 266px;
   height: 30px;
-  margin-left: 70px;
-  top: 211px;
+  right: -115px;
+  top: 125px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 10px;
   line-height: 3px;
   letter-spacing: 17px;
-  color: #e62e00;
+  color: #040404;
   transform: rotate(-90deg);
   opacity: 0;
   animation: appearAnimation 1s ease-in-out forwards;
@@ -355,14 +362,6 @@
   }
 }
 
-@media screen and (max-width: 1468px) and (min-width: 681px) {
-  /* Estilos para pantallas de 1200px a 681px de ancho (computadoras portátiles y tablets) */
-}
-
-@media screen and (max-width: 680px) {
-  /* Estilos para pantallas de hasta 680px de ancho (tablets) */
-}
-
 /* CSS Media */
 
 .media {
@@ -395,14 +394,15 @@ ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px; /* Ajusta el ancho según tus preferencias */
-  height: 40px; /* Ajusta la altura según tus preferencias */
+  width: 20px; /* Ajusta el ancho según tus preferencias */
+  height: 20px; /* Ajusta la altura según tus preferencias */
   text-align: center;
   line-height: 43px; /* Ajusta el espaciado vertical según tus preferencias */
   background: #333;
   border-radius: 50%;
-  font-size: 30px; /* Ajusta el tamaño de la fuente según tus preferencias */
-  color: #666;
+  font-size: 13px; /* Ajusta el tamaño de la fuente según tus preferencias */
+  border: 2px solid transparent; /* Asegura que el borde esté presente */
+  transition: border-color 0s; /* Agrega una transición suave al cambiar el color del borde */
   transition: 0.5s;
 }
 
@@ -429,34 +429,17 @@ ul li a:hover {
   color: #cc2900;
   box-shadow: 0 0 5px #cc2900;
   text-shadow: 0 0 5px #cc2900;
+  border-color: #cc2900; /* Color del borde al pasar el cursor */
+  animation: borderPulse 1s infinite alternate; /* Aplica una animación de pulso al borde */
 }
 
-ul li a:hover {
-  color: #cc2900;
-  box-shadow: 0 0 5px #cc2900;
-  text-shadow: 0 0 5px #cc2900;
-}
-
-/* Estilos para el título */
-.me {
-  font-family: "Encode Sans Condensed", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 50px;
-  line-height: 60px;
-  margin-bottom: 9px;
-  color: #e62e00;
-}
-
-/* Estilos para la introducción */
-.p {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 32px;
-  color: #0b0a0a;
-  text-align: center;
+@keyframes borderPulse {
+  from {
+    border-color: transparent; /* Color inicial del borde */
+  }
+  to {
+    border-color: #cc2900; /* Color final del borde */
+  }
 }
 
 .view {
@@ -464,9 +447,9 @@ ul li a:hover {
   justify-content: center;
   align-items: center;
   position: absolute;
-  right: 0;
+  right: 90px;
   left: 0;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   perspective: 400px;
 }

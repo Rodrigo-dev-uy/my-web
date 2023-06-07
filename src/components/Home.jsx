@@ -1,7 +1,7 @@
 import "../styles/Home.css";
 import Logo from "../assets/tech/3.png";
 import Iam from "../assets/tech/yo1.png";
-
+import { useState, useEffect } from "react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
@@ -9,22 +9,46 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 function Home() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
   const circles = [];
 
   for (let x = 0; x < 6; x++) {
-    circles.push(<div className="circle" key={x}></div>);
+    circles.push(<div className="circle hello-parent perfil " key={x}></div>);
   }
 
+  const handleScroll = () => {
+    const position = window.scrollY;
+    setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <Container className="mt-4 back" fluid="xxl">
-      <Row className="rows" sm={3} xl={3} md={3} xxl={3}>
+    <Container className="mt-4 back " fluid>
+      <Row sm={3} xl={3} md={3} xxl={3}>
         <Col className="cols">
-          <img className="logo" src={Logo} alt="Yo" />
-          <img className="iam" src={Iam} alt="Yo" />
-          <h2 className="name">RODRIGO</h2>
+          <div
+            className="perfil"
+            style={{
+              transform: `translateY(0) translateY(${scrollPosition}px)`,
+            }}
+          >
+            <img className="logo" src={Logo} alt="Yo" />
+            <img className="iam" src={Iam} alt="Yo" />
+          </div>
         </Col>
         <Col className="cols">
-          <div class="hello-parent">
+          <div
+            class="hello-parent"
+            style={{
+              transform: `translateY(-5%) translateY(${scrollPosition}px)`,
+            }}
+          >
             <svg
               class="hello-word"
               width="365"
@@ -185,6 +209,7 @@ function Home() {
                 />
               </g>
             </svg>
+            <h2 className="name">WORLD</h2>
           </div>
         </Col>
         <Col className="cols">
@@ -210,7 +235,12 @@ function Home() {
               </li>
             </ul>
           </div>
-          <div className="view">
+          <div
+            className="view"
+            style={{
+              transform: `translateY(-5%) translateY(${scrollPosition}px)`,
+            }}
+          >
             <div className="plane main">{circles}</div>
           </div>
         </Col>
