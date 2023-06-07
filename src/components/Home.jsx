@@ -46,7 +46,7 @@ function Home() {
           <div
             class="hello-parent"
             style={{
-              transform: `translateY(-5%) translateY(${scrollPosition}px)`,
+              transform: `translateY(0) translateY(${scrollPosition}px)`,
             }}
           >
             <svg
